@@ -28,17 +28,21 @@
 			height: 100vh;
 		}
 		#count-down{
-			color:#2ecc71;
+			
 			text-align: center;
-			font-size: 4.2em;
+			font-size: 5vw;
 			align-self: center;
+		}
+		p{
+			color:#2ecc71;
+			font-size: 10vw;
 		}
 		
 		
 	</style>
 </head>
 <body>
-	<h1>How long to holiday</h1>
+	<!-- <h1>How long to holiday</h1> -->
 	<div id="container">
 		
 		<div id="count-down"></div>
@@ -55,7 +59,7 @@
 		var m = Math.floor(d % (1000 * 60 * 60) / (1000 * 60));
 		var s = Math.floor(d % (1000 * 60) / 1000);
 
-		document.getElementById("count-down").innerHTML = w + ":" + h + ":" + m + ":" + s ;
+		document.getElementById("count-down").innerHTML = "Holiday starts in" + "<br/>" + "<p>" + w + ":" + h + ":" + m + ":" + s + "</p>";
 
 		if(d < 0 ){
 			clearInterval(x);
