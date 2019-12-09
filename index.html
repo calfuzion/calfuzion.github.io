@@ -4,34 +4,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Countdown to holiday</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
 	<style>
 
 		body{
-		
+			margin:0;
 			background-color: #ecf0f1;
 			font-family: 'Roboto Mono', monospace;
 			text-transform: uppercase;
-		}
-		#count-down{
-			color:#2ecc71;
-			
-			text-align: center;
-			font-size: 4.3em;
-			margin: 0 auto;
 
 		}
 		h1{
 			text-align: center;
-			margin-top: 10%;
+			margin-bottom: 0;
+			padding: 0;
 		}
+		#container{
+			width: 100%;
+			display:flex;
+			justify-content: center;
+			height: 100vh;
+		}
+		#count-down{
+			color:#2ecc71;
+			text-align: center;
+			font-size: 6.0em;
+			align-self: center;
+		}
+		
 		
 	</style>
 </head>
 <body>
-	<h1>How long until Holiday</h1>
-	<div id="count-down"></div>
+	<h1>How long to holiday</h1>
+	<div id="container">
+		
+		<div id="count-down"></div>
+	</div>
 <script>
 
 	var timer = new Date("10 January 2020 00:00:00").getTime();
