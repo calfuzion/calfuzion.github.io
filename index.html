@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countdown to holiday</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+	<style>
+		
+		
+			background-color: #ecf0f1;
+			font-family: 'Roboto Mono', monospace;
+			text-transform: uppercase;
+		}
+		#count-down{
+			color:#2ecc71;
+			
+			text-align: center;
+			font-size: 4.3em;
+			margin: 0 auto;
+
+		}
+		h1{
+			text-align: center;
+			margin-top: 10%;
+		}
+		
+	</style>
+
+<body>
+	<h1>How long until Holiday</h1>
+	<div id="count-down"></div>
+<script>
+
+	var timer = new Date("10 January 2020 00:00:00").getTime();
+	var x = setInterval(function(){
+		var now = new Date().getTime();
+		var d = timer - now;
+
+		var w = Math.floor(d / (1000 * 60 * 60 * 24));
+		var h = Math.floor(d % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+		var m = Math.floor(d % (1000 * 60 * 60) / (1000 * 60));
+		var s = Math.floor(d % (1000 * 60) / 1000);
+
+		document.getElementById("count-down").innerHTML = w + ":" + h + ":" + m + ":" + s ;
+
+		if(d < 0 ){
+			clearInterval(x);
+			document.getElementById("count-down"). innerHTML = " holiday has begun";
+		}
+
+	}, 1000);
+</script>
+</body>
+</html>
