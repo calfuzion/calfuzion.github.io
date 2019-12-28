@@ -59,11 +59,12 @@
 		var m = Math.floor(d % (1000 * 60 * 60) / (1000 * 60));
 		var s = Math.floor(d % (1000 * 60) / 1000);
 
+		
 		document.getElementById("count-down").innerHTML = "Holiday starts in" + "<br/>" + "<p>" + w + ":" + h + ":" + m + ":" + s + "</p>";
 
 		if(d < 0 ){
 			clearInterval(x);
-			document.getElementById("count-down"). innerHTML = " holiday has begun";
+			document.getElementById("count-down"). innerHTML =  "<iframe frameborder='0' width='480' height='270' src='https://www.dailymotion.com/embed/video/x2v8lq6?autoPlay=1' allowfullscreen='' allow='autoplay'></iframe>";
 		}
 
 	}, 1000);
