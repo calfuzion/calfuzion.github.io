@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Countdown to holiday</title>
+	<title>Freedom from isolation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
@@ -46,10 +46,12 @@
 	<div id="container">
 		
 		<div id="count-down"></div>
+		
+		
 	</div>
 <script>
 
-	var timer = new Date("10 January 2020 00:00:00").getTime();
+	var timer = new Date("26 April 2020 00:00:00").getTime();
 	var x = setInterval(function(){
 		var now = new Date().getTime();
 		var d = timer - now;
@@ -60,11 +62,11 @@
 		var s = Math.floor(d % (1000 * 60) / 1000);
 
 		
-		document.getElementById("count-down").innerHTML = "Holiday starts in" + "<br/>" + "<p>" + w + ":" + h + ":" + m + ":" + s + "</p>";
+		document.getElementById("count-down").innerHTML = "Isolation Ends in " + "<br/>" + "<p>" + w + ":" + h + ":" + m + ":" + s + "</p>";
 
 		if(d < 0 ){
 			clearInterval(x);
-			document.getElementById("count-down"). innerHTML =  "<iframe frameborder='0' width='480' height='270' src='https://www.dailymotion.com/embed/video/x2v8lq6?autoPlay=1' allowfullscreen='' allow='autoplay'></iframe>";
+			document.getElementById("count-down"). innerHTML =  '<iframe width="560" height="315" src="https://www.youtube.com/embed/roPQ_M3yJTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 		}
 
 	}, 1000);
