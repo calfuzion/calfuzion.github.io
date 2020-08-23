@@ -2,65 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bingo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171616239-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-171616239-1');
-</script>
-
-</hedad>
+	<title>Magic 8</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
-	<h1>Bingo</h1>
-	
-	<div id="container">
-		
-		<table>
-			<tr>
-				<td>1</td>
-				<td>2</td>
-				<td>3</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>2</td>
-				<td>3</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>2</td>
-				<td>3</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>2</td>
-				<td>3</td>
-				<td>4</td>
-			</tr>
-			
-			
-		</table>	
-		<p>This is a simple conseptual bingo idea I would have coded in a reset or score but cbf love ya</p>
-		
+	<div id="outer">
+		<div id="bb">
+			<div id="ball">
+				<blockquote id="result"><p id="output"></p></blockquote>
+			</div>
+		</div>
 	</div>
-
-<script type="text/javascript" src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-	$("td").click(function(){
-		// alert("test");
-		$(this).css("background-color","#ee5253");
-	});
-</script>
+	<footer>This is functionally a working consept of a magic 8 ball it doesn't look the nicest but at least its functional</footer>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
